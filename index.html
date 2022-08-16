@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi amor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/emoji.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center font-righteous white-text">>_JC</h2>
+        <div class="row vh-100">
+            <div class="col-12 col-md-6 d-flex align-items-center">
+                <div>
+                    <h1 class="my-5 font-anton text-center purple-text">¡ES HOY, ES HOY!</h1>
+                    <p class="mb-4 text-center black-text">
+                        Es hoy, el día donde inicie una nueva historia.
+                        <br>
+                        Para ello debemos de dar el siguiente paso...
+                    </p>
+                    <div class="text-center mt-5">
+                        <button type="button" class="btn btn-outline-dark btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            SOY EL SIGUIENTE PASO
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex align-items-center">
+                <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_hxmzmij0.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay></lottie-player>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ¿Estas segura de continuar amor?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark btn_si">Sí</button>
+                    <button type="button" class="btn btn-primary btn_si">Sí pero en azul</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdropPass" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    El siguiente paso esta protegida por nuestra fecha importante más reciente (fue el mes pasado pa no hacerte pensar mucho amor jajaja). Debes de seleccionarla en el siguiente campo y verificar si es correcto.
+                    <div class="my-3">
+                        <input type="date" class="form-control" id="input_date" placeholder="Ingresa la fecha aquí amor">
+                        <div id="error_input_date" class="alert alert-danger mt-3" role="alert" style="display: none">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="verify_pass" class="btn btn-outline-dark">Verificar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdropLoad" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body d-flex align-items-center">
+                    <div class="spinner-grow text-info me-2" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    Por favor espera, se esta iniciando nuestra nueva historia...
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdropInital" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div>
+                        <div class="my-3 d-flex justify-content-center">
+                            <lottie-player id="loading_lottie" src="https://assets5.lottiefiles.com/packages/lf20_m2igjaux.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+                        </div>
+                        <div class="my-3 d-flex justify-content-center">
+                            <lottie-player id="happy_lottie" src="https://assets8.lottiefiles.com/packages/lf20_nxsyeqbd.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; display: none;"  loop autoplay></lottie-player>
+                        </div>
+                        <p class="my-3 font-anton text-center purple-text">
+                            <span id="hours"></span> horas / <span id="minutes"></span> minutos / <span id="seconds"></span> segundos
+                        </p>
+                        <div id="continue_btn" class="text-center my-5" style="display: none">
+                            <button type="button" class="btn btn-outline-dark btn-lg" data-bs-dismiss="modal">
+                                CONTINUEMOS
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html>

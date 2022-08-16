@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Righteous&family=Titillium+Web&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-anton{
+    font-family: 'Anton', sans-serif;
+}
+
+.font-titillium{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.font-righteous{
+    font-family: 'Righteous', cursive;
+}
+
+.black-text{
+    color: #3f3d56 !important;
+}
+
+.white-text{
+    color: #99b2ae !important;
+}
+
+.purple-text{
+    color: #6c63ff !important;
+}
